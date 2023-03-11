@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "./styles/global.css";
+import "./styles/styles.css";
 import Card from "./components/Card";
 import { CardType } from "./types/CardsType";
 import hslToHex from "hsl-to-hex";
@@ -63,11 +63,13 @@ function App() {
 
    return (
       <>
-         <h2>
-            Pressione a <strong>barra de espaço</strong> do teclado para gerar
-            cores, ou{" "}
-            <button onClick={(e) => generateColor(e)}>Clique Aqui</button>
-         </h2>
+         <header>
+            <h2>
+               Pressione a <strong>barra de espaço</strong> do teclado para
+               gerar cores, ou{" "}
+               <button onClick={(e) => generateColor(e)}>Clique Aqui</button>
+            </h2>
+         </header>
 
          <div className="container">
             <div className="colorPaletteContainer">

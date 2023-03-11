@@ -20,6 +20,14 @@ body {
    color: var(--bodyFontColor);
 }
 
+header {
+   padding: 4rem 2rem;
+   display: flex;
+   place-content: center;
+   flex-wrap: wrap;
+   line-height: 1.4;
+}
+
 ul {
    list-style: none;
 }
@@ -31,7 +39,6 @@ a {
 h2 {
    font-size: clamp(1.8rem, 3vw, 2.2rem);
    font-weight: 400;
-   padding: 4rem;
    text-align: center;
 }
 
@@ -40,7 +47,7 @@ a,
 button,
 label,
 input {
-   font-size: clamp(1.4rem, 2vw, 1.8rem);
+   font-size: clamp(1.6rem, 2vw, 1.8rem);
 }
 
 button {
@@ -81,5 +88,14 @@ button:active {
       grid-template-columns: repeat(2, 1fr);
       gap: 2rem 1rem;
       height: 500px;
+   }
+}
+
+@media (max-width: 550px) {
+   header {
+      line-height: 1.5;
+   }
+   button {
+      margin-top: 1rem;
    }
 }
